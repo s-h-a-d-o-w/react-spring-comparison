@@ -26,10 +26,11 @@ transitionStyles.exited = transitionStyles.exiting;
 const DummyComponent = () => <span className={'toggledElement'}>Whatever</span>;
 
 const App = () => {
-	// react-spring data
-	// -----------------------
 	const [showSpringComponent, toggleSpringComponent] = useState(false);
 	const [showTGComponent, toggleTGComponent] = useState(false);
+
+	// react-spring data
+	// -----------------------
 	const transitionSpring = useTransition(showSpringComponent, null, {
 		from: {opacity: 0, left: '-50px'},
 		enter: {opacity: 1, left: '50px'},
