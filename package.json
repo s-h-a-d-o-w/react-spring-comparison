@@ -2,6 +2,9 @@
   "name": "react-spring-comparison",
   "license": "MIT",
   "version": "0.1.0",
+  "engines": {
+    "node": "14"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
